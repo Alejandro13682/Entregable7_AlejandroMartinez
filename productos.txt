@@ -1,0 +1,23 @@
+[
+	{
+		"id": 1,
+		"title": "Escuadra",
+		"price": 123.45,
+		"thumbnail": "https://picsum.photos/300/300"
+	},
+
+	{
+		"id": 2,
+		"title": "Calculadora",
+		"price": 234.56,
+		"thumbnail": "https://picsum.photos/300/300"
+	},
+
+	{
+		"id": 3,
+		"title": "Globo terraqueo",
+		"price": 234.56,
+		"thumbnail": "https://picsum.photos/300/300"
+	}
+	
+]
