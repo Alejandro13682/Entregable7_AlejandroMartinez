@@ -8,6 +8,7 @@ const objProd = JSON.parse(productos)
 let cant = objProd.length
 let Itemvisitas = 0
 let itemRandomVisitas = 0
+
 const productoRandom = () => {
     let arrID = objProd.map(item => item.id)
     let randomID = Math.floor(Math.random() * arrID.length + 1)
@@ -26,13 +27,9 @@ app.get('/item-random', (req, res) => {
     res.send({item: productoRandom()})
 })
 
-
 app.get('/visitas', (req, res) => {    
     res.send({visitas: {items: Itemvisitas, item: itemRandomVisitas}})    
 })
-
-
-//Escuchamos los cambios en el puerto
 
 app.listen(puerto , ()=> {
     console.log('El servidor esta funcionando')
