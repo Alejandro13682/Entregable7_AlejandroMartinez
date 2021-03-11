@@ -13,7 +13,6 @@ const productoRandom = () => {
     let productoRandom = objProd.filter(producto => producto.id == randomID)
     return productoRandom
 }
-productoRandom()
 
 app.get('/items', (req, res) => {
     Itemvisitas += 1
